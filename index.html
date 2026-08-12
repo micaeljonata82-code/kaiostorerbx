@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>KAIOSTORE RBX</title>
+
+    <meta
+        name="description"
+        content="KAIOSTORE RBX — Sets e itens de Flee the Facility."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            KAIO<span>STORE</span>
+        </a>
+
+        <nav class="navigation">
+
+            <a href="#inicio">Início</a>
+
+            <a href="#catalogo">Catálogo</a>
+
+            <a href="#como-comprar">
+                Como comprar
+            </a>
+
+            <a href="#faq">
+                FAQ
+            </a>
+
+        </nav>
+
+        <button class="cart-button">
+            Carrinho
+            <span id="cart-count">0</span>
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         INÍCIO
+    ========================== -->
+
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <img
+                src="images/banner.jpg"
+                alt="Banner da KAIOSTORE RBX"
+                class="hero-background"
+            >
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    KAIOSTORE RBX
+                </p>
+
+                <h1>
+                    SEU INVENTÁRIO.
+                    <span>SEU ESTILO.</span>
+                </h1>
+
+                <p>
+                    Encontre seus próximos sets e itens
+                    em uma loja feita para você.
+                </p>
+
+                <a
+                    href="#catalogo"
+                    class="main-button"
+                >
+                    VER CATÁLOGO
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CATÁLOGO
+        ========================== -->
+
+        <section
+            id="catalogo"
+            class="catalog-section"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        CATÁLOGO
+                    </p>
+
+                    <h2>
+                        Encontre seu próximo item.
+                    </h2>
+
+                </div>
+
+                <p>
+                    Pesquise e filtre os produtos
+                    disponíveis.
+                </p>
+
+            </div>
+
+
+            <div class="catalog-tools">
+
+                <input
+                    type="search"
+                    id="search"
+                    placeholder="Pesquisar item..."
+                >
+
+                <select id="rarity">
+
+                    <option value="all">
+                        Todas as raridades
+                    </option>
+
+                    <option value="common">
+                        Comum
+                    </option>
+
+                    <option value="uncommon">
+                        Incomum
+                    </option>
+
+                    <option value="rare">
+                        Raro
+                    </option>
+
+                    <option value="legendary">
+                        Lendário
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div
+                id="products"
+                class="product-grid"
+            ></div>
+
+        </section>
+
+
+        <!-- =========================
+             COMO COMPRAR
+        ========================== -->
+
+        <section
+            id="como-comprar"
+            class="how-section"
+        >
+
+            <p class="eyebrow">
+                COMO FUNCIONA
+            </p>
+
+            <h2>
+                Comprar é simples.
+            </h2>
+
+
+            <div class="steps">
+
+                <article>
+
+                    <span>01</span>
+
+                    <h3>
+                        Escolha
+                    </h3>
+
+                    <p>
+                        Encontre o produto que
+                        você deseja.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span>02</span>
+
+                    <h3>
+                        Confira
+                    </h3>
+
+                    <p>
+                        Veja os detalhes e
+                        confirme seu pedido.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span>03</span>
+
+                    <h3>
+                        Pedido
+                    </h3>
+
+                    <p>
+                        Acompanhe o andamento
+                        do seu pedido.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FAQ
+        ========================== -->
+
+        <section
+            id="faq"
+            class="faq-section"
+        >
+
+            <p class="eyebrow">
+                FAQ
+            </p>
+
+            <h2>
+                Perguntas frequentes.
+            </h2>
+
+
+            <details>
+
+                <summary>
+                    Como faço um pedido?
+                </summary>
+
+                <p>
+                    Escolha um produto no catálogo
+                    e adicione ao carrinho.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Posso acompanhar meu pedido?
+                </summary>
+
+                <p>
+                    Sim. Essa função será adicionada
+                    ao sistema de pedidos.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Posso entrar em contato com a loja?
+                </summary>
+
+                <p>
+                    Sim. Vamos adicionar o atendimento
+                    posteriormente.
+                </p>
+
+            </details>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer>
+
+        <div class="logo">
+            KAIO<span>STORE</span>
+        </div>
+
+        <p>
+            KAIOSTORE RBX
+        </p>
+
+        <small>
+            © 2026 KAIOSTORE RBX
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
