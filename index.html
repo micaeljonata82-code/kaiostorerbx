@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta
@@ -17,9 +18,12 @@
     >
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
+
 <body>
+
 
     <!-- =========================
          CABEÇALHO
@@ -27,15 +31,23 @@
 
     <header class="header">
 
-        <a href="#" class="logo">
-            KAIO<span>STORE</span>
+        <a
+            href="#inicio"
+            class="logo"
+        >
+            KAIO<span>STORE RBX</span>
         </a>
+
 
         <nav class="navigation">
 
-            <a href="#inicio">Início</a>
+            <a href="#inicio">
+                Início
+            </a>
 
-            <a href="#catalogo">Catálogo</a>
+            <a href="#catalogo">
+                Produtos
+            </a>
 
             <a href="#como-comprar">
                 Como comprar
@@ -47,56 +59,85 @@
 
         </nav>
 
-        <button class="cart-button">
+
+        <button
+            class="cart-button"
+            type="button"
+        >
+
             Carrinho
-            <span id="cart-count">0</span>
+
+            <span id="cart-count">
+                0
+            </span>
+
         </button>
 
     </header>
 
 
+
     <!-- =========================
-         INÍCIO
+         CONTEÚDO
     ========================== -->
 
     <main>
 
-        <section id="inicio" class="hero">
 
-            <img
-                src="images/banner.jpg"
-                alt="Banner da KAIOSTORE RBX"
-                class="hero-background"
-            >
+        <!-- =========================
+             APRESENTAÇÃO
+        ========================== -->
 
-            <div class="hero-overlay"></div>
+        <section
+            id="inicio"
+            class="welcome"
+        >
 
-            <div class="hero-content">
+            <div class="welcome-content">
 
                 <p class="eyebrow">
                     KAIOSTORE RBX
                 </p>
 
+
                 <h1>
-                    SEU INVENTÁRIO.
-                    <span>SEU ESTILO.</span>
+                    Sets e itens
+                    <span>para FTF.</span>
                 </h1>
 
-                <p>
-                    Encontre seus próximos sets e itens
-                    em uma loja feita para você.
+
+                <p class="welcome-description">
+
+                    Encontre os itens que você procura
+                    em um catálogo simples, rápido e
+                    organizado.
+
                 </p>
 
-                <a
-                    href="#catalogo"
-                    class="main-button"
-                >
-                    VER CATÁLOGO
-                </a>
+
+                <div class="welcome-buttons">
+
+                    <a
+                        href="#catalogo"
+                        class="main-button"
+                    >
+                        VER PRODUTOS
+                    </a>
+
+
+                    <a
+                        href="#como-comprar"
+                        class="secondary-button"
+                    >
+                        COMO COMPRAR
+                    </a>
+
+                </div>
 
             </div>
 
         </section>
+
 
 
         <!-- =========================
@@ -108,6 +149,7 @@
             class="catalog-section"
         >
 
+
             <div class="section-heading">
 
                 <div>
@@ -117,26 +159,42 @@
                     </p>
 
                     <h2>
-                        Encontre seu próximo item.
+                        Sets & produtos
                     </h2>
 
                 </div>
 
+
                 <p>
-                    Pesquise e filtre os produtos
-                    disponíveis.
+
+                    Encontre rapidamente
+                    o produto que procura.
+
                 </p>
 
             </div>
 
 
+
+            <!-- BUSCA E FILTROS -->
+
             <div class="catalog-tools">
 
-                <input
-                    type="search"
-                    id="search"
-                    placeholder="Pesquisar item..."
-                >
+
+                <div class="search-box">
+
+                    <span>
+                        🔎
+                    </span>
+
+                    <input
+                        id="search"
+                        type="search"
+                        placeholder="Pesquisar produto..."
+                    >
+
+                </div>
+
 
                 <select id="rarity">
 
@@ -162,15 +220,21 @@
 
                 </select>
 
+
             </div>
 
+
+
+            <!-- PRODUTOS -->
 
             <div
                 id="products"
                 class="product-grid"
             ></div>
 
+
         </section>
+
 
 
         <!-- =========================
@@ -183,66 +247,84 @@
         >
 
             <p class="eyebrow">
-                COMO FUNCIONA
+                COMO COMPRAR
             </p>
 
+
             <h2>
-                Comprar é simples.
+                Três passos simples.
             </h2>
 
 
             <div class="steps">
 
-                <article>
 
-                    <span>01</span>
+                <article class="step">
+
+                    <div class="step-number">
+                        01
+                    </div>
 
                     <h3>
-                        Escolha
+                        Escolha seu item
                     </h3>
 
                     <p>
-                        Encontre o produto que
-                        você deseja.
+
+                        Navegue pelo catálogo e
+                        encontre o produto que deseja.
+
                     </p>
 
                 </article>
 
 
-                <article>
 
-                    <span>02</span>
+                <article class="step">
+
+                    <div class="step-number">
+                        02
+                    </div>
 
                     <h3>
-                        Confira
+                        Adicione ao carrinho
                     </h3>
 
                     <p>
-                        Veja os detalhes e
-                        confirme seu pedido.
+
+                        Confira o produto e
+                        adicione-o ao seu carrinho.
+
                     </p>
 
                 </article>
 
 
-                <article>
 
-                    <span>03</span>
+                <article class="step">
+
+                    <div class="step-number">
+                        03
+                    </div>
 
                     <h3>
-                        Pedido
+                        Finalize seu pedido
                     </h3>
 
                     <p>
-                        Acompanhe o andamento
-                        do seu pedido.
+
+                        Confira seus produtos e
+                        prossiga para o checkout.
+
                     </p>
 
                 </article>
+
 
             </div>
 
         </section>
+
 
 
         <!-- =========================
@@ -258,55 +340,74 @@
                 FAQ
             </p>
 
+
             <h2>
                 Perguntas frequentes.
             </h2>
 
 
-            <details>
-
-                <summary>
-                    Como faço um pedido?
-                </summary>
-
-                <p>
-                    Escolha um produto no catálogo
-                    e adicione ao carrinho.
-                </p>
-
-            </details>
+            <div class="faq-list">
 
 
-            <details>
+                <details>
 
-                <summary>
-                    Posso acompanhar meu pedido?
-                </summary>
+                    <summary>
+                        Como encontro um produto?
+                    </summary>
 
-                <p>
-                    Sim. Essa função será adicionada
-                    ao sistema de pedidos.
-                </p>
+                    <p>
 
-            </details>
+                        Você pode pesquisar pelo nome
+                        ou utilizar o filtro de raridade.
+
+                    </p>
+
+                </details>
 
 
-            <details>
 
-                <summary>
-                    Posso entrar em contato com a loja?
-                </summary>
+                <details>
 
-                <p>
-                    Sim. Vamos adicionar o atendimento
-                    posteriormente.
-                </p>
+                    <summary>
+                        Como funciona o pedido?
+                    </summary>
 
-            </details>
+                    <p>
+
+                        Depois de escolher os produtos,
+                        você poderá revisar seu pedido
+                        antes de finalizar.
+
+                    </p>
+
+                </details>
+
+
+
+                <details>
+
+                    <summary>
+                        Posso entrar em contato com a loja?
+                    </summary>
+
+                    <p>
+
+                        Sim. Posteriormente vamos
+                        adicionar o sistema de atendimento
+                        da KAIOSTORE RBX.
+
+                    </p>
+
+                </details>
+
+
+            </div>
 
         </section>
 
+
     </main>
+
 
 
     <!-- =========================
@@ -315,19 +416,54 @@
 
     <footer>
 
-        <div class="logo">
-            KAIO<span>STORE</span>
+        <div class="footer-content">
+
+
+            <div>
+
+                <div class="logo">
+                    KAIO<span>STORE RBX</span>
+                </div>
+
+                <p>
+                    Sua loja de sets e itens.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#inicio">
+                    Início
+                </a>
+
+                <a href="#catalogo">
+                    Produtos
+                </a>
+
+                <a href="#como-comprar">
+                    Como comprar
+                </a>
+
+                <a href="#faq">
+                    FAQ
+                </a>
+
+            </div>
+
+
         </div>
 
-        <p>
-            KAIOSTORE RBX
-        </p>
 
-        <small>
+        <div class="footer-bottom">
+
             © 2026 KAIOSTORE RBX
-        </small>
+
+        </div>
 
     </footer>
+
 
 
     <script src="script.js"></script>
